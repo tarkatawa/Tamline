@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">tamline</string>
+    <string name="title_activity_tambaler_map">Map</string>
+
+    <string-array name="kendaraan">
+        <item>Mobil</item>
+        <item>Motor</item>
+    </string-array>
+</resources>

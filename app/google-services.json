@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "583533536747",
+    "project_id": "tamline-17518",
+    "storage_bucket": "tamline-17518.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583533536747:android:3323b091c24d97012ca5ae",
+        "android_client_info": {
+          "package_name": "umn.ac.tamline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583533536747-b8fjvgop87f00ucgf388n5qms4inuf1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "umn.ac.tamline",
+            "certificate_hash": "d2683ce215b2d430f8b4afb2f961186066194d97"
+          }
+        },
+        {
+          "client_id": "583533536747-5qhog66b0lenno39lt63rgvo27vsn8p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3dMlJWu1Kn5K7668E48fGQl_ilA5F42c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583533536747-5qhog66b0lenno39lt63rgvo27vsn8p6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
