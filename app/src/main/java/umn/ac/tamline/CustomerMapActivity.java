@@ -41,9 +41,10 @@ public class CustomerMapActivity extends FragmentActivity implements OnMapReadyC
     Location mLastLocation;
     LocationRequest mLocationRequest;
 
-    private Button mLogout, mRequest, mKeRiwayat;
+    private Button mLogout, mRequest, mKeRiwayat, mFAB;
     private LatLng pickupLocation;
     private BottomSheetBehavior mBottomSheetBehavior;
+
 
     String[] items = {"Mobil", "Motor"};
     AutoCompleteTextView autoCompleteTxt;
@@ -93,6 +94,14 @@ public class CustomerMapActivity extends FragmentActivity implements OnMapReadyC
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CustomerMapActivity.this, DaftarRiwayat.class);
+                startActivity(intent);
+            }
+        });
+        mFAB = (Button) findViewById(R.id.fabChat);
+        mFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CustomerMapActivity.this, ChatUtama.class);
                 startActivity(intent);
             }
         });

@@ -14,26 +14,26 @@ public class ProgramAdapter3 extends RecyclerView.Adapter<ProgramAdapter3.ViewHo
 
     Context context;
     String[] programNameList;
-    String[] programPercakapanList;
+    String[] programAlamatList;
     int[] images;
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         TextView rowName;
-        TextView rowPercakapan;
+        TextView rowAlamat;
         ImageView rowImage;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             rowName = itemView.findViewById(R.id.namabengkel);
-            rowPercakapan = itemView.findViewById(R.id.percakapanbengkel);
+            rowAlamat = itemView.findViewById(R.id.alamatbengkel);
             rowImage = itemView.findViewById(R.id.imageView);
         }
     }
 
-    public ProgramAdapter3(Context context, String[] programNameList, String[] programPercakapanList, int[] images){
+        public ProgramAdapter3(Context context, String[] programNameList, String[] programAlamatList, int[] images){
         this.context = context;
         this.programNameList = programNameList;
-        this.programPercakapanList = programPercakapanList;
+        this.programAlamatList = programAlamatList;
         this.images = images;
     }
 
@@ -49,7 +49,7 @@ public class ProgramAdapter3 extends RecyclerView.Adapter<ProgramAdapter3.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ProgramAdapter3.ViewHolder holder, int position) {
         holder.rowName.setText(programNameList[position]);
-        holder.rowPercakapan.setText(programPercakapanList[position]);
+        holder.rowAlamat.setText(programAlamatList[position]);
         holder.rowImage.setImageResource(images[0]);
     }
 

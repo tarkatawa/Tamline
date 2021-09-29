@@ -24,7 +24,7 @@ public class ChatUtama extends AppCompatActivity {
         layoutmanager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutmanager);
 
-        programAdapter = new ProgramAdapter3(this, programNameList, programPercakapanList, programImages);
+        programAdapter = new ProgramAdapter4(this, programNameList, programPercakapanList, programImages);
         recyclerView.setAdapter(programAdapter);
     }
 }

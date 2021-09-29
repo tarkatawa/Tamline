@@ -14,18 +14,18 @@ public class ProgramAdapter4 extends RecyclerView.Adapter<ProgramAdapter4.ViewHo
 
     Context context;
     String[] programNameList;
-    String[] programAlamatList;
+    String[] programPercakapanList;
     int[] images;
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         TextView rowName;
-        TextView rowAlamat;
+        TextView rowPercakapan;
         ImageView rowImage;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             rowName = itemView.findViewById(R.id.namabengkel);
-            rowAlamat = itemView.findViewById(R.id.alamatbengkel);
+            rowPercakapan = itemView.findViewById(R.id.percakapanbengkel);
             rowImage = itemView.findViewById(R.id.imageView);
         }
     }
@@ -33,7 +33,7 @@ public class ProgramAdapter4 extends RecyclerView.Adapter<ProgramAdapter4.ViewHo
     public ProgramAdapter4(Context context, String[] programNameList, String[] programAlamatList, int[] images){
         this.context = context;
         this.programNameList = programNameList;
-        this.programAlamatList = programAlamatList;
+        this.programPercakapanList = programAlamatList;
         this.images = images;
     }
 
@@ -41,7 +41,7 @@ public class ProgramAdapter4 extends RecyclerView.Adapter<ProgramAdapter4.ViewHo
     @Override
     public ProgramAdapter4.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.satuan_riwayat, parent, false);
+        View view = inflater.inflate(R.layout.chat_utama_satuan, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }
@@ -49,7 +49,7 @@ public class ProgramAdapter4 extends RecyclerView.Adapter<ProgramAdapter4.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ProgramAdapter4.ViewHolder holder, int position) {
         holder.rowName.setText(programNameList[position]);
-        holder.rowAlamat.setText(programAlamatList[position]);
+        holder.rowPercakapan.setText(programPercakapanList[position]);
         holder.rowImage.setImageResource(images[0]);
     }
 
