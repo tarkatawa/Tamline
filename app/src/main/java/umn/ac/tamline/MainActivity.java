@@ -13,10 +13,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+//        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pilihan);
 
-        mTambalers = (Button) findViewById(R.id.tambaler);
-        mCustomers = (Button) findViewById(R.id.customer);
+        mTambalers = (Button) findViewById(R.id.buttonBengkel);
+        mCustomers = (Button) findViewById(R.id.buttonPengguna);
 
         mTambalers.setOnClickListener(new View.OnClickListener() {
             @Override

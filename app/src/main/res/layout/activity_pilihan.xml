@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pilihanActivity"
+    android:background="#FAF7FF">
+
+    <LinearLayout
+        android:id="@+id/layutTitlePilihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/layoutButtonPilihan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492">
+
+        <TextView
+            android:id="@+id/textPilihanMasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/pmedium"
+            android:text="Pilihan Masuk"
+            android:textColor="#00C896"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.16"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textSilahkan"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/plight"
+            android:text="Silahkan pilih masuk sebagai"
+            android:textAlignment="center"
+            android:textColor="#7C7C7C"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutButtonPilihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534">
+
+        <Button
+            android:id="@+id/buttonPengguna"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/pmedium"
+            android:text="Pengguna"
+            android:textAllCaps="false"
+            android:textColor="#FAF7FF"
+            app:cornerRadius="100dp" />
+
+        <Button
+            android:id="@+id/buttonBengkel"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/pmedium"
+            android:text="Bengkel"
+            android:textAllCaps="false"
+            android:textColor="#FAF7FF"
+            app:cornerRadius="100dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

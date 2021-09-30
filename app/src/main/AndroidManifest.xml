@@ -12,8 +12,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@mipmap/tamline_logo"
+        android:label="TamLine"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tamline">
@@ -24,6 +24,8 @@
         <activity android:name=".PilihChat" />
         <activity android:name=".DaftarChat" />
         <activity android:name=".CustomerMapActivity" />
+
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -45,7 +47,40 @@
         <activity android:name=".CustomerLoginActivity" />
         <activity android:name=".MapActivity" />
         <activity android:name=".TambalerLoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+
+<!--        punya ichal-->
+<!--        <activity-->
+<!--            android:name=".akunActivity"-->
+<!--            android:exported="true" />-->
+
+        <activity
+            android:name=".signupBengkelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".lupaPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".signupPenggunaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".loginBengkelActivity"
+            android:exported="true" />
+<!--        <activity-->
+<!--            android:name=".loginPenggunaActivity"-->
+<!--            android:exported="true" />-->
+        <activity
+            android:name=".pilihanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding1Activity"
+            android:exported="true" />
+        <activity
+            android:name=".splashscreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

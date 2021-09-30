@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,7 +21,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class TambalerLoginActivity extends AppCompatActivity {
     private EditText mEmail, mPassword;
-    private Button mLogin, mRegistration;
+    private Button mLogin;
+    private TextView mRegistration;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener firebaseAuthListener;
@@ -44,10 +46,10 @@ public class TambalerLoginActivity extends AppCompatActivity {
             }
         };
 
-        mEmail = (EditText) findViewById(R.id.email);
-        mPassword = (EditText) findViewById(R.id.password);
-        mLogin = (Button) findViewById(R.id.login);
-        mRegistration = (Button) findViewById(R.id.registration);
+        mEmail = (EditText) findViewById(R.id.inputEmailBengkel);
+        mPassword = (EditText) findViewById(R.id.inputPasswordBengkel);
+        mLogin = (Button) findViewById(R.id.buttonMasukBengkel);
+        mRegistration = (TextView) findViewById(R.id.daftarBengkel);
 
         mRegistration.setOnClickListener(new View.OnClickListener() {
             @Override

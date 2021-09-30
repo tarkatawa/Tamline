@@ -168,6 +168,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/miringin_button"
             android:onClick="pindahKeChat"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
             android:text="Cari Bengkel" />
     </LinearLayout>
     </FrameLayout>
